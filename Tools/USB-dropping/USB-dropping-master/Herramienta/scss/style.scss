@@ -1,0 +1,97 @@
+body{
+  background: #222;
+}
+
+form{
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0,0,0,.2);
+  h1{
+    text-align: center;
+    font-family: "Lato";
+    color: #ccc;
+    font-weight: 100;
+    text-shadow: 0px -1px 0px #000;
+    margin: 5px 0px;
+  }
+  input[type='text'],
+  input[type='password']{
+    width: 100%;
+    border: 1px solid #efefef;
+    box-shadow: 0px 3px 0px #999;
+    -webkit-box-shadow: 0px 3px 0px #999;
+    height: 35px;
+    padding-left: 6px;
+    font-size: 14px;
+  }
+  input[type='text']:focus {
+    box-shadow: 0px 3px 0px #0499ff;
+    -webkit-box-shadow: 0px 3px 0px #0499ff;
+  }
+  .input-contain{
+    width: 100%;
+    height: 35px;
+    margin: 25px auto;
+  }
+  input[type='submit'] {
+    background: #4875E9;
+    border: none;
+    width: 101%;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 3px 0px #59A0E2;
+    -webkit-box-shadow: 0px 3px 0px #59A0E2;
+  }
+  input[type='submit']:hover{
+    background: darken(#4875e9, 10%);
+    cursor:pointer;
+  }
+  input:focus{
+    outline: none;
+  }
+  .custom_checkbox{
+    cursor:pointer;
+    line-height: 25px;
+    color: #fff;
+    .check_box{
+      width: 25px;
+      height: 25px;
+      display:block;
+      float: left;
+      border-radius: 2px;
+      background: #000;
+    }
+    .text {
+      margin-left: 8px;
+      font-family: "Lato";
+      font-size: 13px;
+      
+    }
+    .icon-tick{
+      color:rgb(87, 204, 87);
+      display: none;
+      line-height: 23px;
+      display:none;
+      text-align: center;
+      font-size: 23px;
+    }
+    
+  }
+}
+img{
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+}
+
+.custom_checkbox.active .icon-tick {
+  display:block;
+}
+
+
+#check-hidden{
+ display:none;
+}
